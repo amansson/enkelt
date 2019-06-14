@@ -1,3 +1,1 @@
-class Video < ApplicationRecord
-  belongs_to :product_medium, as: :mediable
-end
+class Video < ApplicationRecord end

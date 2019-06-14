@@ -1,3 +1,1 @@
-class Pdf < ApplicationRecord
-  belongs_to :product_medium, as: :mediable
-end
+class Pdf < ApplicationRecord end
