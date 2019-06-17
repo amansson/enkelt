@@ -8,7 +8,7 @@ class ReviewsController < ApplicationController
 
     if @review.save
       flash[:success] = "Review was created successfully"
-      redirect_to product_path(params[:id])
+      redirect_to product_path(@review.product_id)
     else
       render '/'
     end
