@@ -1,10 +1,14 @@
 <div class="footer-enkelt">
-  <div class="brand">ENKELT</div>
-  <div class="media">
-      <i class="fas fa-file-pdf media-item "></i>
-      <i class="fas fa-video media-item"></i>
-      <i class="fas fa-tools media-item"></i>
-  </div>
+  <%= link_to products_path do %>
+   <div class="brand">ENKELT</div>
+  <% end %>
+  <% if params[:action] == "guide" %>
+    <div class="media">
+        <i class="fas fa-file-pdf media-item "></i>
+        <i class="fas fa-video media-item"></i>
+        <i class="fas fa-tools media-item"></i>
+    </div>
+  <% end %>
   <div class="profile">
     <i class="fas fa-user-circle"></i>
   </div>
