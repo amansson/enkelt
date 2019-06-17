@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   end
   
   get "products/:id/guide", to: "products#guide"
-  get "products/:id/inspire", to: "products#inspire"
+  get "products/:id/inspiration", to: "products#inspiration"
   
   get "/components", to: "pages#components"
 end
