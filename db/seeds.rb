@@ -53,14 +53,14 @@ ProductPicture.create!(id: 2, name: "Guide picture", picture_type: "guide", url:
 ProductPicture.create!(id: 3, name: "Screw picture", picture_type: "screw", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560775759/m2_wikldn.png", product_id: 1)
 ProductPicture.create!(id: 4, name: "Tool picture", picture_type: "tool", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560775759/m2_wikldn.png", product_id: 1)
 ProductPicture.create!(id: 5, name: "Overview picture", picture_type: "overview", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560775759/m2_wikldn.png", product_id: 1)
-ProductPicture.create!(id: 6, name: "Warning picture", picture_type: "warning", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560775759/m2_wikldn.png", product_id: 1)
+ProductPicture.create!(id: 6, name: "Warning picture", picture_type: "warning", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560785204/warning_d81lnc.png", product_id: 1)
 ProductPicture.create!(id: 7, name: "Guide picture", picture_type: "guide", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560775759/m2_wikldn.png", product_id: 1)
 
 puts 'Creating User_products'
 UserProduct.create!(id: 1, user_id: 1, product_id: 1, purchase_date: "2019-07-11")
 UserProduct.create!(id: 2, user_id: 1, product_id: 2, purchase_date: "2017-07-11")
-UserProduct.create!(id: 3, user_id: 1, product_id: 3, purchase_date: "2014-07-11")
-UserProduct.create!(id: 4, user_id: 1, product_id: 4, purchase_date: "2012-07-11")
+UserProduct.create!(id: 3, user_id: 1, product_id: 3, purchase_date: "2014-07-11", assembled: true)
+UserProduct.create!(id: 4, user_id: 1, product_id: 4, purchase_date: "2012-07-11", assembled: true)
 UserProduct.create!(id: 5, user_id: 1, product_id: 5, purchase_date: "2010-07-11", assembled: true)
 
 
