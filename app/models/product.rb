@@ -6,5 +6,7 @@ class Product < ApplicationRecord
   validates :name, :description, :article_number, presence: true
   validates :icon, :image, :pdf, :video, presence: true
 
-  mount_uploader :icon, :image, PhotoUploader
+  # mount_uploader :icon, :image, PhotoUploader
+   # mount_uploader :url, PhotoUploader 
+  # uncomment to upload images
 end
