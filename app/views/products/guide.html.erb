@@ -1,0 +1,26 @@
+<h1>This is the Guide View</h1>
+
+<strong>Pictures Warning: </strong><br>
+<% @pictures[:warning].each do |picture| %>
+  <%= picture.name %>
+<% end %>
+
+<strong>Pictures Tool: </strong><br>
+<% @pictures[:tool].each do |picture| %>
+  <%= picture.name %>
+<% end %>
+
+<strong>Pictures Screw: </strong><br>
+<% @pictures[:screw].each do |picture| %>
+  <%= picture.name %>
+<% end %>
+
+<strong>Pictures Overview: </strong><br>
+<% @pictures[:overview].each do |picture| %>
+  <%= picture.name %>
+<% end %>
+
+<strong>Pictures Guide: </strong><br>
+<% @pictures[:guide].each do |picture| %>
+  <%= picture.name %>
+<% end %>
