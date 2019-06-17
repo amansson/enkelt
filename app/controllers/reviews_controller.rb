@@ -1,6 +1,6 @@
 class ReviewsController < ApplicationController
   def new
-    @reviews = Review.all
+    @review = Review.new
   end
 
   def create
@@ -8,9 +8,15 @@ class ReviewsController < ApplicationController
 
     if @review.save
       flash[:success] = "Review was created successfully"
-      redirect_to product_path(@reviews)
+      redirect_to product_path(params[:id])
     else
       render '/'
     end
+  end
+
+  private
+
+  def params_review
+    params.require(:review).permit(:rating, :content, :product_id, :user_id)
   end
 end
