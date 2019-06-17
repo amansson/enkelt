@@ -1,10 +1,25 @@
-// Define variables for your color scheme
+// Color Scheme - IKEA colors
+// https://react.fundament.ikea.com/?knob-Button%20text=Filled%20button&knob-Icon=&knob-icon%20position=leading&knob-Icon%20position=leading&selectedKind=A.%20FOUNDATION%7CColours&selectedStory=Overview&full=0&addons=1&stories=1&panelRight=0&addonPanel=REACT_STORYBOOK%2Freadme%2Fpanel
 
-// For example:
-$red: #FD1015;
-$blue: #167FFB;
-$yellow: #FFC65A;
-$orange: #E67E22;
-$green: #1EDD88;
-$gray: #0E0000;
-$light-gray: #F4F4F4;
+$dark-red: #cc0008;
+$red: #e00751;
+$dark-blue: #0058a3;
+$blue: #0077c8;
+$light-blue: #4595ff;
+$yellow: #ffdb00;
+$orange: #ffa524;
+$green: #0a8a00;
+$white: #ffffff;
+$black: #333333;
+$dark-gray: #666666;
+$mid-gray: #959595;
+$light-gray: #dfdfdf;
+$dark-white: #f5f5f5;
+
+// Color-Variables
+$text-color: $black;
+$bg-color: $white;
+$secondary: $dark-gray;
+$tertiary: $mid-gray;
+$main-blue: $dark-blue;
+$main-red: $dark-red;
