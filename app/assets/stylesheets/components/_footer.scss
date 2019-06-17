@@ -1,0 +1,14 @@
+.footer-enkelt {
+  justify-content: space-between;
+  background: white;
+  .footer-collapse {
+    flex-grow: 0;
+  }
+  .footer-brand {
+    margin: 10px;
+  }
+  .footer-media {
+    display: flex;
+    width: 40px;
+  }
+}
