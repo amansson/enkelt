@@ -2,25 +2,33 @@
 
 <strong>Pictures Warning: </strong><br>
 <% @pictures[:warning].each do |picture| %>
-  <%= picture.name %>
+  <img src=<%= picture.url %> >
 <% end %>
+
+<br><br>
 
 <strong>Pictures Tool: </strong><br>
 <% @pictures[:tool].each do |picture| %>
-  <%= picture.name %>
+  <img src=<%= picture.url %> >
 <% end %>
+
+<br><br>
 
 <strong>Pictures Screw: </strong><br>
 <% @pictures[:screw].each do |picture| %>
-  <%= picture.name %>
+  <img src=<%= picture.url %> >
 <% end %>
+
+<br><br>
 
 <strong>Pictures Overview: </strong><br>
 <% @pictures[:overview].each do |picture| %>
-  <%= picture.name %>
+  <img src=<%= picture.url %> >
 <% end %>
+
+<br><br>
 
 <strong>Pictures Guide: </strong><br>
 <% @pictures[:guide].each do |picture| %>
-  <%= picture.name %>
+  <img src=<%= picture.url %> >
 <% end %>
