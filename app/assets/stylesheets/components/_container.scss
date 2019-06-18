@@ -53,7 +53,7 @@
   }
 }
 
-// --------Containers on Landing-Page------------
+// -----Containers on Landing-Page---------
 
 .container-landingpage {
   // Formating of background-picture
@@ -73,10 +73,10 @@
     margin-left: 5vw;
   }
 }
-// ---------End Containers Landing-Page-----------
+// -----End Containers Landing-Page-------
 
 
-// -----------Containers on Index-Page------------
+// ------Containers on Index-Page--------
 
 // Container to display side-by side
 .index {
@@ -110,16 +110,17 @@
 // Container on the right,containing product-cards
 .product-display {
   justify-content: center;
-  padding-top: 1vh;
+  width: 50vw;
+  align-items: center;
+  padding-top: 0.5vh;
   padding-left: 1vw;
-  padding-right: 2vw;
+  padding-right: 1.5vw;
   margin-bottom: 63px;
-  // h2 {
-  //   margin-top: 3vh;
-  //   margin-bottom: 2vh;
-  //   margin-right: auto;
-  //   margin-left: auto;
+  // .header {
+  //   text-align: center;
+  //   padding-top: 12vh;
+  //   padding-bottom: 8vh;
   // }
 }
 
-// ----------End Containers Index-Page------------
+// -------End Containers Index-Page---------
