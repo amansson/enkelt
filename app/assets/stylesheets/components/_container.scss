@@ -53,6 +53,8 @@
   }
 }
 
+// --------Containers on Landing-Page------------
+
 .container-landingpage {
   // Formating of background-picture
   width: 100vw;
@@ -67,5 +69,57 @@
   .content {
     text-align: center;
     margin-top: 10vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
   }
 }
+// ---------End Containers Landing-Page-----------
+
+
+// -----------Containers on Index-Page------------
+
+// Container to display side-by side
+.index {
+  display: flex;
+}
+
+// Container on the left, same content as landing-page
+.container-lp-copy {
+  // Formating of background-picture
+  width: 50vw;
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: calc(100vh - 60px);
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3)), asset-url('ett-utekoek.jpg');
+  background-position: center;
+  background-size: cover;
+  // Formating of content
+  display: flex;
+  color: $white;
+  justify-content: center;
+  .content {
+    text-align: center;
+    margin-top: 10vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
+}
+
+// Container on the right,containing product-cards
+.product-display {
+  justify-content: center;
+  padding-top: 1vh;
+  padding-left: 1vw;
+  padding-right: 2vw;
+  margin-bottom: 63px;
+  // h2 {
+  //   margin-top: 3vh;
+  //   margin-bottom: 2vh;
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
+}
+
+// ----------End Containers Index-Page------------
