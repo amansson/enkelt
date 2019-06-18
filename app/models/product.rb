@@ -6,9 +6,13 @@ class Product < ApplicationRecord
   validates :name, :description, :article_number, presence: true
   validates :icon, :image, :pdf, :video, presence: true
 
-  # mount_uploader :icon, :image, PhotoUploader
-   # mount_uploader :url, PhotoUploader 
-  # uncomment to upload images
+  include PgSearch
+  
+  pg_search_scope :search_by_name_and_description,
+    against: [ :name, :description ],
+    using: {
+      tsearch: { prefix: true } # <-- now `superman batm` will return something!
+    }
 
   def all_guide_pictures
     pictures = {}
