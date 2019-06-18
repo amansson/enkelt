@@ -6,4 +6,7 @@ class PagesController < ApplicationController
 
   def components
   end
+
+  def js
+  end
 end
