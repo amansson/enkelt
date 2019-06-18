@@ -1,7 +1,47 @@
-<h1>This is the Product Show view</h1>
+<div class="container-left", style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1)), url(<%= @product.image %>); ba">
+  <div class="container">
 
-<%= @product.name %>
 
-<br>
-<br>
-<%= render "shared/rating"%>
+   <!--  <div class="bg-white">
+        <%= render "shared/rating"%>
+    </div> -->
+
+  </div>
+</div>
+<div class="container-right">
+  <div class="container">
+    <div class="product-info">
+      <h1><%= @product.name.upcase %></h1>
+      <p><%= @product.description %></p>
+      <p class="product-number">Article number: <%= @product.article_number %></p>
+      </div>
+    <h1>ASSEMBLY GUIDES</h1>
+    <%= link_to product_guide_path do %>
+      <div class="interactive">
+        <i class="fas fa-tablet-alt show-icon"></i>
+        <p>Interactive guide</p>
+      </div>
+    <% end %>
+    <div class="medias">
+      <%= link_to @product.video do %>
+        <div class="show-media">
+          <i class="fas fa-video show-icon"></i>
+          <p>Video</p>
+        <% end %>
+        </div>
+      <%= link_to @product.pdf do %>
+        <div class="show-media">
+          <i class="fas fa-file-pdf show-icon"></i>
+          <p>PDF file</p>
+       <% end %>
+      </div>
+      <%= link_to "https://www.taskrabbit.com/", target: "new" do %>
+      <div class="show-media">
+        <%= image_tag "icon_task_rabbit.jpg", alt: "TaskRabbit", class: "task-rabbit"; %>
+        <p>TaskRabbit</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+</div>
