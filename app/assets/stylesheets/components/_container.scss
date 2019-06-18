@@ -52,3 +52,20 @@
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   }
 }
+
+.container-landingpage {
+  // Formating of background-picture
+  width: 100vw;
+  height: calc(100vh - 70px);
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3)), asset-url('ett-utekoek.jpg');
+  background-position: center;
+  background-size: cover;
+  // Formating of content
+  display: flex;
+  color: $white;
+  justify-content: center;
+  .content {
+    text-align: center;
+    margin-top: 10vh;
+  }
+}
