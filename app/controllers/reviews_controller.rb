@@ -12,7 +12,7 @@ class ReviewsController < ApplicationController
     if @review.save
       flash[:success] = "Review was created successfully"
       # redirect_to product_path(@review.product_id)
-      redirect_to products_inspiration_path(@review.produtch_id)
+      redirect_to products_inspiration_path(@review.product_id)
     else
       render :new
     end
