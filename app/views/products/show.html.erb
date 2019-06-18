@@ -3,9 +3,5 @@
 <%= @product.name %>
 
 <br>
-<% @product.reviews.each do |review| %>
-
 <br>
-  <%= review.rating %>
-  <img src="https://res.cloudinary.com/favapps-dx-33/image/upload/v1560846560/Ledlightbulbs_vunh8s.webp" >
-<% end %>
+<%= render "shared/rating"%>
