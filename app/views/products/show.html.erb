@@ -1,7 +1,33 @@
-<h1>This is the Product Show view</h1>
+<div class="container-left", style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1)), url(<%= @product.image %>); ba">
+  <div class="container">
+    <h1><%= @product.name.upcase %></h1>
+    <p><%= @product.description %></p>
 
-<%= @product.name %>
+   <!--  <div class="bg-white">
+        <%= render "shared/rating"%>
+    </div> -->
 
-<br>
-<br>
-<%= render "shared/rating"%>
+  </div>
+</div>
+<div class="container-right">
+  <div class="container">
+    <h1>Assembly guides</h1>
+    <div class="interactive">
+      <i class="fas fa-tablet-alt show-icon"></i>
+      <p>Interactive guide</p>
+    </div>
+    <div class="medias">
+      <div class="show-media">
+        <i class="fas fa-video show-icon"></i>
+        <p>Video</p>
+      </div>
+      <div class="show-media">
+        <i class="fas fa-file-pdf show-icon"></i>
+      </div>
+      <div class="show-media">
+        <%= image_tag "icon_task_rabbit.jpg", alt: "TaskRabbit", style: 'height:50px;width:auto', class: "task-rabbit"; %>
+      </div>
+    </div>
+  </div>
+
+</div>

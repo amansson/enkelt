@@ -1,0 +1,45 @@
+.show {
+
+}
+
+.interactive {
+  width: 100%;
+  background-color: $yellow;
+  // opacity: .7;
+  padding: 15px;
+  margin-bottom: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  border-radius: 3px;
+  border: 1px solid gray;
+  font-size: 40px;
+  p {
+      color: black;
+      margin-bottom: 0 ;
+      font-size: 20px;
+  }
+}
+
+.medias {
+  display: flex;
+
+}
+
+.show-media {
+  text-align: center;
+  width: 32%;
+  margin-right: 8px;
+  padding: 15px;
+  font-size: 35px;
+  border: 1px solid gray;
+  &:last-child{
+    margin-right: 0;
+  }
+  p {
+    font-size: 20px;
+  }
+
+}
+
+.task-rabbit {
+
+}
