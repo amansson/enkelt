@@ -10,11 +10,18 @@
   left: 0;
   z-index: 1030;
   align-items: center;
+  .a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
   .brand {
     margin-left: 30px;
     font-size: 30px;
     margin: auto 10px;
     font-family: $headers-font;
+    text-shadow: 2px 2px 3px rgba(20,20,20,0.2);;
   }
   .media {
     display: flex;
@@ -24,11 +31,20 @@
   .media-item {
     font-size: 30px;
     padding-left: 25px;
+    text-shadow: 2px 2px 3px rgba(20,20,20,0.2);
   }
 
   .profile {
+    display: flex;
+    align-items: center;
     font-size: 40px;
     padding-right: 15px;
+    text-shadow: 2px 2px 3px rgba(20,20,20,0.2);
+  }
+  .user-action {
+    font-size: 20px;
+    padding-right: 15px;
+    text-shadow: 2px 2px 3px rgba(20,20,20,0.2);
   }
 }
 

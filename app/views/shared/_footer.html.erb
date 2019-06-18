@@ -1,15 +1,27 @@
 <div class="footer-enkelt">
   <%= link_to products_path do %>
-   <div class="brand">ENKELT</div>
+  <div class="brand">ENKELT</div>
   <% end %>
   <% if params[:action] == "guide" %>
-    <div class="media">
-        <i class="fas fa-file-pdf media-item "></i>
-        <i class="fas fa-video media-item"></i>
-        <i class="fas fa-tools media-item"></i>
-    </div>
-  <% end %>
-  <div class="profile">
-    <i class="fas fa-user-circle"></i>
+  <div class="media">
+    <i class="fas fa-video media-item"></i>
+    <i class="fas fa-tools media-item"></i>
   </div>
+  <% end %>
+  <% if current_user %>
+  <div class="profile">
+    <%= link_to destroy_user_session_path, method: :delete do %>
+      <div class= "user-action">Log out</div>
+    <% end %>
+    <div>
+      <i class="fas fa-user-circle"></i>
+    </div>
+  </div>
+  <% else %>
+  <div class="profile">
+    <%= link_to new_user_session_path do %>
+      <div class= "user-action">Log in</div>
+    <% end %>
+  </div>
+  <% end %>
 </div>
