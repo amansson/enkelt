@@ -8,7 +8,7 @@
   text-align:center;
 }
 
-.container_left {
+.container-left {
   position: fixed;
   top: 0;
   left: 0;
@@ -17,21 +17,21 @@
   background-size: cover;
   background-position: top;
   margin-bottom: 70px;
-  padding: 50px 0;
-  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), asset-url('bg_picture.png');
+  padding: 75px 0;
+  //background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), asset-url('bg_picture.png');
   h1 {
     color: white;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     font-size: 38px;
   }
   p {
     font-size: 22px;
     color: white;
     opacity: .7;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   }
 }
-.container_right {
+.container-right {
   position: fixed;
   background-color: $body-bg;
   top: 0;
@@ -39,17 +39,17 @@
   width: 50%;
   height: 100vh;
   margin-bottom: 70px;
-  padding: 50px 0;
+  padding: 75px 0;
   h1 {
-    color: blue;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    color: $dark-gray;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     font-size: 38px;
   }
   p {
     font-size: 22px;
-    color: blue;
+    color: $dark-gray;
     opacity: .7;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   }
 }
 
