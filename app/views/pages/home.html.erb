@@ -1,8 +1,18 @@
 
 <div class="container-landingpage">
   <div class="content">
-    <h1>What will you assemble today?</h1>
-    <p>Search-Form</p>
-    <p>Scan Barcode</p>
+    <h1>WE MAKE IT ENKELT</h1>
+    <h2>Select what you want to assemble today</h2>
+
+    <div class="search-container mt-5">
+      <%= form_tag products_path, method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "input-search", placeholder: "Search product"
+      %>
+      <%= submit_tag "Search", class: "btn-e" %>
+      <% end %>
+      <i class="fas fa-barcode barcode btn-e"></i>
+    </div>
   </div>
 </div>
