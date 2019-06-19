@@ -26,15 +26,9 @@ class ProductsController < ApplicationController
 
   def mark_as_assembled
     @product = Product.find(params[:id])
-    # @mark_as_assembled = UserProduct.new(marked_params)
-    # @mark_as_assembled.product = @product
-    # @mark_as_assembled.user = current_user
-    # @mark_as_assembled.save
-    # redirect_to products_inspiration_path(@review.product_id)
   end
 
   def set_mark_as_assembled
-    # raise
     @mark_product = Product.find(params[:id])
     @mark_product.user_products[0].assembled = true
     @mark_product.user_products[0].save
