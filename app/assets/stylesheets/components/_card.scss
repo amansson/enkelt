@@ -1,5 +1,23 @@
 // SCSS for component Card, used for showing search results or products the customer has bought.
 
+.product-card-link-container {
+  &:hover {
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: $text-black;
+  }
+  p {
+    font-size: 12px;
+    line-height: 1.4;
+    opacity: .7;
+    margin-bottom: 0;
+    margin-top: 6px;
+    color: $text-gray;
+  }
+}
 
 .card-product {
   overflow: hidden;
@@ -16,20 +34,7 @@
     width: 110px;
     object-fit: cover;
   }
-  h2 {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  p {
-    font-size: 12px;
-    line-height: 1.4;
-    opacity: .7;
-    margin-bottom: 0;
-    margin-top: 6px;
-  }
   .card-product-infos {
     padding-left: 15px;
   }
 }
-
-
