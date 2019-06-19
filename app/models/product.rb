@@ -13,7 +13,7 @@ class Product < ApplicationRecord
     using: {
       tsearch: { prefix: true } # <-- now `superman batm` will return something!
     }
-
+  
   def all_guide_pictures
     pictures = {}
     pictures[:guide] = product_pictures.where(picture_type: 'guide')
@@ -27,5 +27,5 @@ class Product < ApplicationRecord
   def all_inspiration_pictures
     return product_pictures.where(picture_type: 'inspiration')
   end
-
+  
 end
