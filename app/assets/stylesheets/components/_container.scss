@@ -27,6 +27,10 @@
   bottom: 0;
   height: calc(100vh - 60px);
   padding: 75px 0;
+  h1 {
+    color: $text-gray;
+    text-shadow: $text-shadow-lg;
+  }
 }
 
 // -----Containers on Landing-Page---------
