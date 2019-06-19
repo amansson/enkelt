@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   get "products/:id/inspiration", to: "products#inspiration", as: "product_inspiration"
 
   get "/components", to: "pages#components"
-
+  get "/js", to: "pages#js"
 end
