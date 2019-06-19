@@ -31,6 +31,11 @@
     color: $text-gray;
     text-shadow: $text-shadow-lg;
   }
+  p {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: $text-gray;
+  }
 }
 
 // -----Containers on Landing-Page---------
@@ -104,6 +109,12 @@
     width: 80%;
     margin-right: auto;
     margin-left: auto;
+    h3 {
+      text-shadow: $text-shadow-lg;
+    }
+    p {
+      text-shadow: $text-shadow-sm;
+    }
   }
 }
 
