@@ -10,9 +10,6 @@
   </div>
 
   <div class="product-display">
-    <!-- <div class="header">
-      <h2>Your Products</h2>
-    </div> -->
     <% @products.each do |product| %>
       <%= render 'shared/card', product: product %>
     <% end %>

@@ -5,6 +5,9 @@ class ProductsController < ApplicationController
     else
       @products = Product.all
     end
+
+    user_products = current_user.user_products
+    @not_assembled = user_products.where(:assembled =>  false)
   end
 
   def show
