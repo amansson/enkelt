@@ -62,7 +62,7 @@ ProductPicture.create!(id: 16, name: "Guide picture", picture_type: "guide", url
 ProductPicture.create!(id: 17, name: "Guide picture", picture_type: "guide", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560960969/pdf/malm8_rqoied.png", product_id: 1)
 ProductPicture.create!(id: 18, name: "Guide picture", picture_type: "guide", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560960969/pdf/malm9_y5unq4.png", product_id: 1)
 ProductPicture.create!(id: 19, name: "Guide picture", picture_type: "guide", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560960969/pdf/malm10_u4ccfj.png", product_id: 1)
-ProductPicture.create!(id: 20, name: "Guide picture", picture_type: "guide", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560960969/pdf/malm11_optskk.pngg", product_id: 1)
+ProductPicture.create!(id: 20, name: "Guide picture", picture_type: "guide", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560960969/pdf/malm11_optskk.png", product_id: 1)
 ProductPicture.create!(id: 21, name: "Guide picture", picture_type: "guide", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560960970/pdf/malm12_zkbmmt.png", product_id: 1)
 ProductPicture.create!(id: 22, name: "Guide picture", picture_type: "guide", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560960970/pdf/malm13_y8v8bz.png", product_id: 1)
 ProductPicture.create!(id: 23, name: "Guide picture", picture_type: "guide", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560960970/pdf/malm14_wticyv.png", product_id: 1)
