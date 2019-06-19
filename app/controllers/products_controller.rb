@@ -2,8 +2,12 @@ class ProductsController < ApplicationController
   def index
     if params[:query].present?
       @products = Product.search_by_name_and_description(params[:query])
-    else
+      @search = true
+    elsif params[:query].empty?
       @products = Product.all
+      @search = true
+    else
+      @search = false
     end
 
     user_products = current_user.user_products

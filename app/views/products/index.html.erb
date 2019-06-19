@@ -9,10 +9,31 @@
     </div>
   </div>
 
+
   <div class="product-display">
-    <% @products.each do |product| %>
-      <%= render 'shared/card', product: product %>
+    <% if @search == true %>
+      <% if @products.present? %>
+        <div class="header">
+          <h3>Search Results</h3>
+          <p>These Products require assembly.<br> Click for more information.</p>
+        </div>
+        <% @products.each do |product| %>
+          <%= render 'shared/card', product: product %>
+        <% end %>
+      <% else %>
+        <div class="header">
+          <h3>Sorry</h3>
+          <p>"<%= params[:query].upcase %>"" could not be found.<br><br> If you are looking for a product that doesn't require assembly, please visit IKEA.com.</p>
+      <% end %>
+    <% else %>
+      <div class="header">
+        <h3>Your Products</h3>
+        <p>These are Products you have bought, which require assembly. Mark as complete when done.</p>
+        </div>
+        <% @not_assembled.each do |product| %>
+          <%= render 'shared/card', product: product %>
+        <% end %>
     <% end %>
   </div>
-
 </div>
+

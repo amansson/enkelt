@@ -1,16 +1,29 @@
+<div class="bg-dark p-2">
+  <!-- <section class="search_container"> -->
+    <div class="main-header">
+      <form action="/products" accept-charset="UTF-8" method="get" class="header-form">
+        <input name="utf8" type="hidden" value="✓">
+        <input type="text" name="query" id="query" placeholder="Search product">
+        <i class="fas fa-search"></i>
+      </form>
+    </div>
+  <!-- </section> -->
+</div>
 
-<!--   <div class="container_left">
-    <div class="container">
-      <h1>Testing page for our components</h1>
-      <p>Test of margin bottom</p>
-    </div>
+<div class="bg-dark p-2">
+  <div class="search-container mt-5 form-control-lg">
+      <%= form_tag products_path, method: :get do %>
+      <%= text_field_tag :query,
+        params[:query], class: "input-search", placeholder: "Search product" %>
+      <%= submit_tag "Search", class: "btn-e btn-e-trans" %>
+      <% end %>
+      <i class="fas fa-barcode barcode btn-e btn-e-trans"></i>
   </div>
-  <div class="container_right">
-    <div class="container">
-      <h1>RIGHT Container</h1>
-      <p>Test of roight container</p>
-    </div>
-  </div> -->
+</div>
+
+<div class="e-form">
+
+</div>
 
 <br>
 <div class="container">
@@ -32,9 +45,6 @@
   <a href="#" class="btn-e-guide btn-e-dark"><i class="fas fa-align-center" style="transform: rotate(-90deg);"}></i></a>
 </div>
 
-<div class="container">
-  <%= render "shared/card" %>
-</div>
 
 <div class="container">
   <%= render "shared/billy_animation" %>
