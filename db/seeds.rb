@@ -11,19 +11,19 @@ Review.destroy_all
 UserProduct.destroy_all
 ProductPicture.destroy_all
 Product.destroy_all
-# User.destroy_all
+User.destroy_all
 
-# puts 'Creating users'
-# User.create!(id: 1, email: "billiej@gmail.com", password: "123456").save(validate: false)
-# User.create!(id: 2, email: "chowu@gmail.com", password: "123456").save(validate: false)
-# User.create!(id: 3, email: "peterj@gmail.com", password: "123456").save(validate: false)
-# User.create!(id: 4, email: "andreasj@gmail.com", password: "123456").save(validate: false)
-# User.create!(id: 5, email: "fionak@gmail.com", password: "123456").save(validate: false)
-# User.create!(id: 6, email: "ranok@gmail.com", password: "123456").save(validate: false)
+puts 'Creating users'
+User.create!(id: 1, email: "billiej@gmail.com", password: "123456").save(validate: false)
+User.create!(id: 2, email: "chowu@gmail.com", password: "123456").save(validate: false)
+User.create!(id: 3, email: "peterj@gmail.com", password: "123456").save(validate: false)
+User.create!(id: 4, email: "andreasj@gmail.com", password: "123456").save(validate: false)
+User.create!(id: 5, email: "fionak@gmail.com", password: "123456").save(validate: false)
+User.create!(id: 6, email: "ranok@gmail.com", password: "123456").save(validate: false)
 
 puts 'Creating Products'
 Product.create!(id: 1, name: "Malm", description: "4-drawer chest, black-brown", article_number: "603.604.62", icon: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560853520/malm_ico_uo9vc2.jpg", image: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560951906/img_malm_drawer_avcr4c.png", pdf: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560776545/malm_pdf_tolpxc.pdf", video: "https://www.youtube.com/watch?v=37v96zMllFA")
-Product.create!(id: 2, name: "Hasselvika", description: "6-drawer chest, gray-beige", article_number: "604.217.38", icon: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560950788/ico_hasselvika_drawer_mjkfsv.jpg", image: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560776374/hasselvika_img_fjot9o.webp", pdf: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560776422/hasselvika_pdf_qphpve.pdf", video: "show-video")
+Product.create!(id: 2, name: "Hasselvika", description: "6-drawer chest, gray-beige", article_number: "604.217.38", icon: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560952439/ico_hasselvika_drawer_ljazdh.jpg", image: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560776374/hasselvika_img_fjot9o.webp", pdf: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560776422/hasselvika_pdf_qphpve.pdf", video: "show-video")
 Product.create!(id: 3, name: "Malm", description: "Bed frame, high, black-brown, Luröy", article_number: "690.094.75", icon: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560850109/ico_malm_bed_xdramx.webp", image: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560850255/img_malm_bed_g2q4vh.webp", pdf: "show-pdf", video: "show-video")
 Product.create!(id: 4, name: "Brimnes", description: "Cabinet with doors, black", article_number: "803.006.60", icon: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560850672/ico_brimnes_cabinet_lhkhu6.webp", image: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560850865/img_brimnes_cabinet_qu4uqi.webp", pdf: "show-pdf", video: "show-video")
 Product.create!(id: 5, name: "Brimnes", description: "Daybed with 2 drawers/2 mattresses, white, Meistervik firm", article_number: "891.300.36", icon: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560851095/ico_brimnes_bed_tlptol.webp", image: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560851109/img_brimnes_bed_knt5kv.webp", pdf: "show-pdf", video: "show-video")
