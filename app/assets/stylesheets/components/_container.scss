@@ -109,13 +109,19 @@
 
 // Container on the right,containing product-cards
 .product-display {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 50vw;
-  align-items: center;
   padding-top: 0.5vh;
   padding-left: 1vw;
   padding-right: 1.5vw;
   margin-bottom: 63px;
+  .header {
+    text-align: center;
+    color: $yellow;
+  }
 }
 
 // -------End Containers Index-Page---------
