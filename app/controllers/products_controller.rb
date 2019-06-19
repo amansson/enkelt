@@ -16,8 +16,8 @@ class ProductsController < ApplicationController
   end
 
   def guide
-    product = Product.find(params[:id])
-    @pictures = product.all_guide_pictures
+    @product = Product.find(params[:id])
+    @pictures = @product.all_guide_pictures
   end
 
   def inspiration
