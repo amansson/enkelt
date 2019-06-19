@@ -1,0 +1,176 @@
+.search_container {
+  height:40px;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .barcode {
+    padding: 0px 50px ;
+    margin-right: 70px;
+    font-color: white;
+    font-size: 40px;
+    color: $white;
+  }
+
+.input-search {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  width: 300px;
+  margin-right: 20px;
+}
+.action-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 40px
+}
+
+/// ######  IMPORTED CSS FROM CODEPEN ######
+
+
+@mixin flex($flow, $justify, $align) {
+  display: flex;
+  flex-flow: $flow;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+$theme-color: #f7ac00;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  backface-visibility: hidden;
+}
+
+// body {
+//   font-family: $body-font;
+//   font-size: 16px;
+//   color: #fff;
+// }
+
+// a {
+//   text-decoration: none;
+//   color: inherit;
+//   display: inline-block;
+// }
+
+.search_container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background: no-repeat center/cover  asset-url('ett-utekoek.jpg');
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.main-header {
+  position: relative;
+  z-index: 1;
+}
+
+.header-form {
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+
+  input {
+    width: 100%;
+    height: 30px;
+    padding: 1.5em 2em;
+    border: none;
+    font-family: $body-font;
+    text-transform: capitalize;
+    border-radius: 2px;
+    color: #555;
+    outline: none;
+    cursor: default;
+    transition: transform .28s ease-in;
+
+    &.scale {
+      transform: scale(1.03);
+    }
+  }
+
+  ::-webkit-input-placeholder {
+    font-family: $body-font;
+    color: #ccc;
+    text-transform: none;
+    font-size: 1rem;
+  }
+
+  .fa-search {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    color: #333;
+  }
+}
+
+
+.ripple {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  border: 40px solid #ffc608;
+  transform: scale(0);
+  position: absolute;
+  opacity: 1;
+  z-index: 2;
+}
+
+.rippleEffect {
+    animation: rippleDrop .6s linear;
+}
+
+@keyframes rippleDrop {
+  100% {
+    transform: scale(.18);
+    opacity: 0;
+  }
+}
+
+@keyframes slideDown {
+  100% {height: 200px;}
+}
+
+@keyframes fadeIn {
+  100% { opacity: 1;}
+}
+
+@keyframes slideRight {
+  100%  {
+    opacity: 1;
+    transform: translateX(0px);
+    display: block;
+  }
+}
+
+@keyframes expand {
+  100%  {
+    width: 100%;
+  }
+}
+
+@keyframes hide {
+  100%  {
+    opacity: 0;
+    position: fixed;
+  }
+}

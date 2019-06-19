@@ -5,14 +5,18 @@
     <h2>Select what you want to assemble today</h2>
 
     <div class="search-container mt-5">
-      <%= form_tag products_path, method: :get do %>
-      <%= text_field_tag :query,
-        params[:query],
-        class: "input-search", placeholder: "Search product"
-      %>
-      <%= submit_tag "Search", class: "btn-e" %>
-      <% end %>
-      <i class="fas fa-barcode barcode btn-e"></i>
+       <div class="main-header">
+        <form action="/products" accept-charset="UTF-8" method="get" class="header-form">
+          <input name="utf8" type="hidden" value="✓">
+          <input type="text" name="query" id="query" placeholder="Search product">
+          <i class="fas fa-search"></i>
+        </form>
+      </div>
+      <br>
+      <div class="action-buttons">
+        <i class="fas fa-barcode barcode btn-e"></i>
+        <a href="#" class="btn-e bg-primary">My Products</a>
+      </div>
     </div>
   </div>
 </div>
