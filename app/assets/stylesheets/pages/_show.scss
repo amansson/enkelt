@@ -8,7 +8,7 @@
   // opacity: .7;
   padding: 15px;
   margin-bottom: 12px;
-  box-shadow: 4px 4px 5px rgba(0,0,0,0.2);
+  box-shadow: $box-shadow-lg;
   border-radius: $border-radius;
   // border: 1px solid $light-gray;
   font-size: 40px;
@@ -21,28 +21,31 @@
 
 .medias {
   display: flex;
-
 }
 
 .product-info{
   padding:10px;
-  color: $dark-gray;
+  h1 {
+  color: $text-black;
+  text-shadow: $text-shadow-lg;
+  }
   p {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 0;
+    color: $text-gray;
+    text-shadow: $text-shadow-sm;
   }
   .product-number {
-    color: $mid-gray;
-    font-size: 16px;
+    color: $text-gray;
+    font-size: 12px;
     margin-bottom: 20vh;
   }
-
 }
 
 .show-media {
   color: $dark-gray;
   border-radius: $border-radius;
-  box-shadow: 4px 4px 5px rgba(0,0,0,0.2);
+  box-shadow: $box-shadow-lg;
   text-align: center;
   width: 32%;
   margin-right: 12px;
@@ -57,13 +60,12 @@
     margin: 0;
     font-size: 1rem;
   }
-
 }
 
 .task-rabbit {
+    height: 50px;
+    width: auto;
     // background: $main-blue;
-    height:50px;
-    width:auto;
     // z-index: 1;
     // mix-blend-mode: luminosity;
   }
