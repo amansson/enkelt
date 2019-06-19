@@ -1,7 +1,9 @@
-<div class="card-product">
-  <img src= <%= product.icon %> >
-  <div class="card-product-infos">
-    <h2><%= product.name %></h2>
-    <p> <%= product.description %></p>
+<%= link_to product_path(product), class: "product-card-link-container" do %>
+  <div class="card-product">
+    <img src= <%= product.icon %> >
+    <div class="card-product-infos">
+      <h2><%= product.name %></h2>
+      <p> <%= product.description %></p>
+    </div>
   </div>
-</div>
+<% end %>
