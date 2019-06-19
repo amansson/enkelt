@@ -28,8 +28,8 @@
         <h3>Your Products</h3>
         <p>These are Products you have bought, which require assembly. Mark as complete when done.</p>
         </div>
-        <% @not_assembled.each do |product| %>
-          <%= render 'shared/card', product: product %>
+        <% @not_assembled.each do |userproduct| %>
+          <%= render 'shared/card', product: userproduct.product %>
         <% end %>
     <% end %>
   </div>
