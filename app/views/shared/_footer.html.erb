@@ -4,8 +4,12 @@
   <% end %>
   <% if params[:action] == "guide" %>
   <div class="media">
-    <i class="fas fa-video media-item"></i>
-    <i class="fas fa-tools media-item"></i>
+    <button type="button" class="btn btn-default btn-circle text-warning"><i class="fa fa-exclamation-triangle"></i>
+    <button type="button" class="btn btn-default btn-circle text-warning"><i class="fa fa-video"></i>
+    <button type="button" class="btn btn-default btn-circle text-warning"><i class="fa fa-screwdriver"></i>
+    <button type="button" class="btn btn-primary btn-circle"><i class="fa fa-tools"></i>
+    <button type="button" class="btn btn-success btn-circle"><i class="fa fa-ellipsis-h"></i>
+    <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i>
   </div>
   <% end %>
   <% if current_user %>
