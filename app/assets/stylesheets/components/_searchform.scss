@@ -7,11 +7,12 @@
 }
 
  .barcode {
-    padding: 0px 50px ;
-    margin-right: 70px;
+    padding: 0px 10px ;
+    margin-left: 70px;
     font-color: white;
     font-size: 40px;
     color: $white;
+    background-color: $primary;
   }
 
 .input-search {
@@ -86,7 +87,7 @@ $theme-color: #f7ac00;
 }
 
 .header-form {
-  width: 500px;
+  width: 400px;
   margin: 0 auto;
   position: relative;
 

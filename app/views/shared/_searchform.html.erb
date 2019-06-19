@@ -1,0 +1,17 @@
+<h1>WE MAKE IT ENKELT</h1>
+<h2>Select what you want to assemble today</h2>
+
+<div class="search-container mt-5">
+   <div class="main-header">
+    <form action="/products" accept-charset="UTF-8" method="get" class="header-form">
+      <input name="utf8" type="hidden" value="✓">
+      <input type="text" name="query" id="query" placeholder="Search product">
+      <i class="fas fa-search"></i>
+    </form>
+  </div>
+  <br>
+  <div class="action-buttons">
+    <%= link_to "My Products", products_path, class:"btn-e bg-primary" %>
+    <i class="fas fa-barcode barcode btn-e"></i>
+  </div>
+</div>
