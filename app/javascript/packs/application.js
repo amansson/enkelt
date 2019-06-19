@@ -6,4 +6,4 @@ import {swipe} from "../components/swipe.js";
 swipe();
 
 import {billyAnimation} from "../components/billy_animation.js";
-billyAnimation();
+//billyAnimation();
