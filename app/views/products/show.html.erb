@@ -23,13 +23,13 @@
           <p>Video</p>
         <% end %>
         </div>
-      <%= link_to @product.pdf do %>
+      <%= link_to @product.pdf, target: "_blank" do %>
         <div class="show-media">
           <i class="fas fa-file-pdf show-icon"></i>
           <p>PDF file</p>
        <% end %>
       </div>
-      <%= link_to "https://www.taskrabbit.com/", target: "new" do %>
+      <%= link_to "https://www.taskrabbit.com/", target: "_blank" do %>
       <div class="show-media">
         <%= image_tag "icon_task_rabbit.jpg", alt: "TaskRabbit", class: "task-rabbit"; %>
         <p>TaskRabbit</p>
