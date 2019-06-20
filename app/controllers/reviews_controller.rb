@@ -2,6 +2,8 @@ class ReviewsController < ApplicationController
   def new
     @review = Review.new
     @product = Product.find(params[:product_id])
+    @inspirations = @product.all_inspiration_pictures
+    # see if this works
   end
 
   def create
@@ -12,7 +14,7 @@ class ReviewsController < ApplicationController
     if @review.save
       flash[:success] = "Review was created successfully"
       # redirect_to product_path(@review.product_id)
-      redirect_to products_inspiration_path(@review.product_id)
+      redirect_to product_inspiration_path(@review.product_id)
     else
       render :new
     end
