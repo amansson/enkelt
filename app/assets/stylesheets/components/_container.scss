@@ -5,51 +5,36 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 70px;
-  text-align:center;
+  text-align: center;
 }
 
 .container-left {
+  width: 50vw;
   position: fixed;
   top: 0;
   left: 0;
-  width: 50%;
-  height: 100vh;
+  bottom: 0;
+  height: calc(100vh - 60px);
+  background-position: center;
   background-size: cover;
-  background-position: top;
-  margin-bottom: 70px;
-  padding: 75px 0;
-  //background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), asset-url('bg_picture.png');
-  h1 {
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    font-size: 38px;
-  }
-  p {
-    font-size: 22px;
-    color: white;
-    opacity: .7;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-  }
 }
+
 .container-right {
+  width: 50vw;
   position: fixed;
-  background-color: $body-bg;
   top: 0;
   right: 0;
-  width: 50%;
-  height: 100vh;
-  margin-bottom: 70px;
+  bottom: 0;
+  height: calc(100vh - 60px);
   padding: 75px 0;
   h1 {
-    color: $dark-gray;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    font-size: 38px;
+    color: $text-gray;
+    text-shadow: $text-shadow-lg;
   }
   p {
-    font-size: 22px;
-    color: $dark-gray;
-    opacity: .7;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    font-size: 18px;
+    margin-bottom: 0;
+    color: $text-gray;
   }
 }
 
@@ -64,8 +49,8 @@
   background-size: cover;
   // Formating of content
   display: flex;
-  color: $white;
   justify-content: center;
+  color: $white;
   .content {
     text-align: center;
     margin-top: 10vh;
@@ -114,7 +99,6 @@
   flex-direction: column;
   justify-content: center;
   width: 50vw;
-  padding-top: 0.5vh;
   padding-left: 1vw;
   padding-right: 1.5vw;
   margin-bottom: 63px;
@@ -125,6 +109,12 @@
     width: 80%;
     margin-right: auto;
     margin-left: auto;
+    h3 {
+      text-shadow: $text-shadow-lg;
+    }
+    p {
+      text-shadow: $text-shadow-sm;
+    }
   }
 }
 

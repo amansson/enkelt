@@ -11,6 +11,6 @@ searchform();
 import {warningtext} from "../components/warningtext.js";
 warningtext();
 
-import {billyAnimation} from "../components/billy_animation.js";
+//import {billyAnimation} from "../components/billy_animation.js";
 //billyAnimation();
 
