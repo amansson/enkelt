@@ -1,5 +1,14 @@
-<h1>test new review</h1>
 
+<div class="container-review">
 
-<%= render "shared/rating", review: @review %>
+  <div class="banner" style="background-image: url(<%= @product.all_guide_pictures.first %>);">
+    <h1>Congratulations on finishing the assembly!</h1>
+    <p><strong>We hope you enjoy your product.</strong><br>Please rate the provided guidance in the process, and leave feedback regarding your experience.</p>
 
+  </div>
+
+  <div class="form">
+    <%= render "shared/rating", review: @review %>
+  </div>
+
+</div>
