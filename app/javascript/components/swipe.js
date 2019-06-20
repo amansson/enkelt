@@ -15,7 +15,7 @@ var galleryTop = new Swiper('.gallery-top', {
     type: 'bullets',
   },
 });
-;}
+}
 
 
 export {swipe};
