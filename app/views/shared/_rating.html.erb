@@ -14,9 +14,9 @@
       <input type="radio" id="star1" name="review[rating]" value="1" />
       <label for="star1" title="text">1 star</label>
     </div>
-    <br>
-    <%= f.input :content %>
-    <%= f.submit %>
-  <% end %>
-
+<!--     <div class="input"> -->
+      <%= f.input :content, label: false, placeholder: "Please leave a comment", :input_html => {:rows => 5} %>
+      <%= f.button :submit, "Send Feedback", class: "btn-e" %>
+      <% end %>
+<!--     </div> -->
 
