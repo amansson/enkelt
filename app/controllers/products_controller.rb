@@ -38,6 +38,7 @@ class ProductsController < ApplicationController
     @mark_product = Product.find(params[:id])
     @mark_product.user_products[0].assembled = true
     @mark_product.user_products[0].save
+    redirect_to products_path
   end
 
   private
