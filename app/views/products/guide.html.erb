@@ -1,51 +1,22 @@
-
- <div class="swiper-container allery-top">
-  <h2 class="text-center"><%= @product.name %></h2>
-  <div class="swiper-pagination pt-3"></div>
-
-  <div class="swiper-wrapper">
-    <% @pictures[:guide].each do |picture| %>
-      <div class="swiper-slide" style="background-image:url(<%= picture.url %>)"></div>
-    <% end %>
-  </div>
-</div>
-<div class="swiper-container gallery-thumbs">
-   <div class="swiper-wrapper">
-    <% @pictures[:guide].each do |picture| %>
-      <div class="swiper-slide" style="background-image:url(<%= picture.url %>)"></div>
-    <% end %>
-  </div>
-</div>
-
 <div class="swiper-container gallery-top">
+<h2 class="text-center"><%= @product.name %></h2>
+<div class="swiper-pagination"></div>
   <div class="swiper-wrapper">
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/5)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/6)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/7)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/8)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/9)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/10)"></div>
+    <% @pictures[:guide].each do |picture| %>
+      <div class="swiper-slide"><img class="image-swipe" src=<%= picture.url %> ></div>
+    <% end %>
   </div>
+
 </div>
 <div class="swiper-container gallery-thumbs">
   <div class="swiper-wrapper">
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/5)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/6)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/7)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/8)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/9)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/10)"></div>
+    <% @pictures[:guide].each do |picture| %>
+      <div class="swiper-slide"><img class="image-thump" src=<%= picture.url %> ></div>
+    <% end %>
   </div>
 </div>
 
+<%= javascript_pack_tag 'swipe' %>
 
 <!--
 <strong>Pictures Warning: </strong><br>
