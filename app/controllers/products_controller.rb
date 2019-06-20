@@ -26,8 +26,8 @@ class ProductsController < ApplicationController
   end
 
   def inspiration
-    product = Product.find(params[:id])
-    @inspirations = product.all_inspiration_pictures
+    @product = Product.find(params[:id])
+    @inspirations = @product.all_inspiration_pictures
   end
 
   def mark_as_assembled
