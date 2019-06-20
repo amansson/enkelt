@@ -1,3 +1,24 @@
+.container-review {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  .banner {
+    height: 35vh;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    color: $text-black;
+    text-align: center;
+    padding: 10vh;
+  }
+  .form {
+    padding: 15vh;
+  }
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -24,11 +45,11 @@
   content: '♥ ';
 }
 .rate > input:checked ~ label {
-  color: $main-red;    
+  color: $main-red;
 }
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
-  color: $main-red;  
+  color: $main-red;
 }
 .rate > input:checked + label:hover,
 .rate > input:checked + label:hover ~ label,
