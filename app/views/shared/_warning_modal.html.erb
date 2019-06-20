@@ -1,0 +1,36 @@
+
+<!-- USAGE: PASTE THIS MESSAGE INTO THE PAGE WHERE THE MODAL SHOULD BE DISPLAYED -->
+<!-- ELEMENT ID MUST BE "open_warning" -->
+<!-- <button class="btn-primary" id="open_warning">Open Warning text</button> -->
+
+<!-- The Modal -->
+<div id="warningtext" class="modal">
+
+
+  <!-- Modal content -->
+<div class="modal-content">
+  <div class="modal-header">
+    <%= image_tag "warning.png", style: "height:80px;" %>
+    <h1 class="text-dark pt-3 pl-4" >WARNING</h1>
+    <span class="close">&times;</span>
+  </div>
+  <div class="modal-body warningtext">
+    <span>ENGLISH</span>
+    <p>Important information<br>Read carefully<br>Keep this information for further reference</p>
+  </div>
+  <div class="modal-body warningtext">
+    <span>Serious or fatal crushing injuries can occur from furniture tip-over. To prevent this furniture from tipping over it must be permanently fixed to the wall.</span><br><br>
+    <p>Fixing devices for the wall are not included since different wall materials require different types of fixing devices. Use fixing devices suitable for the walls in your home. For advice on suitable fixing systems, contact your local specialized dealer.</p>
+  </div>
+  <div class="modal-footer pt-2">
+    <!-- <p>Keep this information for further reference</p> -->
+    <div>
+      <input type="checkbox" name="confirm" value="confirmed">
+      <span> I have read and understand the warning text</span>
+    </div>
+    <span class="btn-info p-1 rounded" id="btn-close">Close</span>
+
+  </div>
+</div>
+
+</div>
