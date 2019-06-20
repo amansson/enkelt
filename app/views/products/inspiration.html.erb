@@ -1,5 +1,12 @@
-<h1>This is the Insparation View</h1>
+<h1><%= @product.name %> insparation images</h1>
 
-<% @inspirations.each do |inspiration| %>
-  <img src=<%= inspiration.url %> >
-<% end %>
+
+<div class="d-flex flex-wrap justify-content-between">
+  <% @inspirations.each do |inspiration| %>
+    <div>
+      <img src='<%= inspiration.url %>' height="300" >
+    </div>
+  <% end %>
+</div>
+
+
