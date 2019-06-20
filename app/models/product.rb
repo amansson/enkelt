@@ -7,13 +7,13 @@ class Product < ApplicationRecord
   validates :icon, :image, :pdf, :video, presence: true
 
   include PgSearch
-  
+
   pg_search_scope :search_by_name_and_description,
     against: [ :name, :description ],
     using: {
       tsearch: { prefix: true } # <-- now `superman batm` will return something!
     }
-  
+
   def all_guide_pictures
     pictures = {}
     pictures[:guide] = product_pictures.where(picture_type: 'guide')
@@ -27,5 +27,5 @@ class Product < ApplicationRecord
   def all_inspiration_pictures
     return product_pictures.where(picture_type: 'inspiration')
   end
-  
+
 end
