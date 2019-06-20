@@ -15,10 +15,15 @@ ActiveRecord::Schema.define(version: 2019_06_17_132760) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "product_pictures", force: :cascade do |t| t.datetime
-  "created_at", null: false t.datetime "updated_at", null: false t.bigint
-  "product_id" t.string "name"   t.string "picture_type" t.string "url" t.index
-  ["product_id"], name: "index_product_pictures_on_product_id" end
+  create_table "product_pictures", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "product_id"
+    t.string "name"
+    t.string "picture_type"
+    t.string "url"
+    t.index ["product_id"], name: "index_product_pictures_on_product_id"
+  end
 
   create_table "products", force: :cascade do |t|
     t.string "name"
