@@ -2,7 +2,7 @@
  <div class="swiper-container pt-3">
   <h2 class="text-center"><%= @product.name %></h2>
   <div class="swiper-pagination pt-3"></div>
-  
+
   <div class="swiper-wrapper">
     <div class="swiper-slide"><img src="https://res.cloudinary.com/favapps-dx-33/image/upload/v1560771166/malm_img_v8aecz.webp" alt=""></div>
     <div class="swiper-slide"><img src="https://res.cloudinary.com/favapps-dx-33/image/upload/v1560776374/hasselvika_img_fjot9o.webp" alt=""></div>
@@ -17,38 +17,4 @@
 
   </div>
 </div>
-
-<!--
-<strong>Pictures Warning: </strong><br>
-<% @pictures[:warning].each do |picture| %>
-  <img src=<%= picture.url %> >
-<% end %>
-
-<br><br>
-
-<strong>Pictures Tool: </strong><br>
-<% @pictures[:tool].each do |picture| %>
-  <img src=<%= picture.url %> >
-<% end %>
-
-<br><br>
-
-<strong>Pictures Screw: </strong><br>
-<% @pictures[:screw].each do |picture| %>
-  <img src=<%= picture.url %> >
-<% end %>
-
-<br><br>
-
-<strong>Pictures Overview: </strong><br>
-<% @pictures[:overview].each do |picture| %>
-  <img src=<%= picture.url %> >
-<% end %>
-
-<br><br>
-
-<strong>Pictures Guide: </strong><br>
-<% @pictures[:guide].each do |picture| %>
-  <img src=<%= picture.url %> >
-<% end %>
--->
+<%= render 'shared/warning_modal' %>
