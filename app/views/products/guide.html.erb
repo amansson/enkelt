@@ -16,7 +16,6 @@
   </div>
 </div>
 
-<%= javascript_pack_tag 'swipe' %>
 <%= render 'shared/warning_modal' %>
 <!--
 <strong>Pictures Warning: </strong><br>
@@ -52,3 +51,6 @@
   <img src=<%= picture.url %> >
 <% end %>
 -->
+<%= content_for(:after_js)  do %>
+  <%= javascript_pack_tag 'swipe' %>
+<% end %>
