@@ -1,5 +1,17 @@
-<h1>This is the Insparation View</h1>
+<h1><%= @product.name.upcase %> insparation images</h1>
 
-<% @inspirations.each do |inspiration| %>
-  <img src=<%= inspiration.url %> >
-<% end %>
+
+<div class="d-flex flex-wrap mb-5">
+  <% @inspirations.each do |inspiration| %>
+    <div>
+      <!-- <img src=<%= inspiration.url %> > -->
+      <img src=<%= inspiration.transform_image("w_340,h_230,c_fill,g_south") %> >
+    </div>
+  <% end %>
+</div>
+
+
+
+ <!-- iPad width = 1024 /3 = 340px -->
+
+
