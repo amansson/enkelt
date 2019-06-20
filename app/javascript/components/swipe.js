@@ -1,15 +1,21 @@
 import Swiper from "swiper";
+function swipe() {
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 7,
+});
 
-const swipe = () => {
-  var swiper = new Swiper('.swiper-container', {
-    fadeEffect: {
-      crossFade: true
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-    },
-  });
-}
+var galleryTop = new Swiper('.gallery-top', {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: galleryThumbs
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+});
+;}
+
 
 export {swipe};

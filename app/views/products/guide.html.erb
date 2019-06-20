@@ -1,20 +1,54 @@
-
- <div class="swiper-container pt-3">
-  <h2 class="text-center"><%= @product.name %></h2>
-  <div class="swiper-pagination pt-3"></div>
-
+<div class="swiper-container gallery-top">
+<h2 class="text-center"><%= @product.name %></h2>
+<div class="swiper-pagination"></div>
   <div class="swiper-wrapper">
-    <div class="swiper-slide"><img src="https://res.cloudinary.com/favapps-dx-33/image/upload/v1560771166/malm_img_v8aecz.webp" alt=""></div>
-    <div class="swiper-slide"><img src="https://res.cloudinary.com/favapps-dx-33/image/upload/v1560776374/hasselvika_img_fjot9o.webp" alt=""></div>
-    <div class="swiper-slide"><img src="https://res.cloudinary.com/favapps-dx-33/image/upload/v1560850255/img_malm_bed_g2q4vh.webp" alt=""></div>
-    <div class="swiper-slide"><img src="https://res.cloudinary.com/favapps-dx-33/image/upload/v1560850865/img_brimnes_cabinet_qu4uqi.webp" alt=""></div>
-    <div class="swiper-slide"><img src="https://res.cloudinary.com/favapps-dx-33/image/upload/v1560851109/img_brimnes_bed_knt5kv.webp" alt=""></div>
-    <div class="swiper-slide">Slide 6</div>
-    <div class="swiper-slide">Slide 7</div>
-    <div class="swiper-slide">Slide 8</div>
-    <div class="swiper-slide">Slide 9</div>
-    <div class="swiper-slide">Slide 10</div>
+    <% @pictures[:guide].each do |picture| %>
+      <div class="swiper-slide"><img class="image-swipe" src=<%= picture.url %> ></div>
+    <% end %>
+  </div>
 
+</div>
+<div class="swiper-container gallery-thumbs">
+  <div class="swiper-wrapper">
+    <% @pictures[:guide].each do |picture| %>
+      <div class="swiper-slide"><img class="image-thump" src=<%= picture.url %> ></div>
+    <% end %>
   </div>
 </div>
+
+<%= javascript_pack_tag 'swipe' %>
 <%= render 'shared/warning_modal' %>
+<!--
+<strong>Pictures Warning: </strong><br>
+<% @pictures[:warning].each do |picture| %>
+  <img src=<%= picture.url %> >
+<% end %>
+
+<br><br>
+
+<strong>Pictures Tool: </strong><br>
+<% @pictures[:tool].each do |picture| %>
+  <img src=<%= picture.url %> >
+<% end %>
+
+<br><br>
+
+<strong>Pictures Screw: </strong><br>
+<% @pictures[:screw].each do |picture| %>
+  <img src=<%= picture.url %> >
+<% end %>
+
+<br><br>
+
+<strong>Pictures Overview: </strong><br>
+<% @pictures[:overview].each do |picture| %>
+  <img src=<%= picture.url %> >
+<% end %>
+
+<br><br>
+
+<strong>Pictures Guide: </strong><br>
+<% @pictures[:guide].each do |picture| %>
+  <img src=<%= picture.url %> >
+<% end %>
+-->
