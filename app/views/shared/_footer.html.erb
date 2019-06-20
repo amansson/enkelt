@@ -1,15 +1,20 @@
 <div class="footer-enkelt">
-  <%= link_to products_path do %>
+  <%= link_to root_path do %>
   <div class="brand">ENKELT</div>
   <% end %>
   <% if params[:action] == "guide" %>
   <div class="media">
+    <%= link_to product_path(@product) do %>
+      <button type="button" class="btn btn-default btn-circle"><i class="fa fa-home"></i>
+    <% end %>
     <button type="button" class="btn btn-default btn-circle text-danger" id="open_warning"><i class="fa fa-exclamation-triangle"></i>
     <button type="button" class="btn btn-default btn-circle"><i class="fa fa-video"></i>
     <button type="button" class="btn btn-default btn-circle text-primary"><i class="fa fa-screwdriver"></i>
     <button type="button" class="btn btn-primary btn-circle"><i class="fa fa-tools"></i>
     <button type="button" class="btn btn-success btn-circle"><i class="fa fa-ellipsis-h"></i>
-    <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i>
+    <%= link_to new_product_review_path(@product) do %>
+      <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i>
+    <% end %>
   </div>
   <% end %>
   <% if current_user %>
