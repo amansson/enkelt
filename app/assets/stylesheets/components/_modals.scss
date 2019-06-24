@@ -54,7 +54,20 @@
       font-weight: bolder;
     }
 }
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .video-modal {
   display: none; /* Hidden by default */
@@ -84,51 +97,44 @@
   // animation-name: animatetop;
   animation-name: fadeIn;
   animation-duration: 0.5s;
-}
-
-/* Modal Header */
-.video-modal-header {
-  padding: 2px 16px;
-  background-color: white;
-  color: white;
-}
-
-/* Modal Body */
-.video-modal-body {
-  height: 600px;   //calc(100vh-80px);
-  padding: 2px 16px;
-}
-
-/* Modal Footer */
-.video-modal-footer {
-  padding: 2px 16px;
-  background-color: $main-blue;
-  color: white;
-  display: flex;
-  justify-content: right;
-  align-items: end;
-  div {
-    margin-left: 900px;
-    padding: 5px;
+  /* Modal Header */
+  .video-modal-header {
+    padding: 2px 16px;
+    background-color: white;
+    color: white;
+    /* The Close Button */
+    .video-close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .video-close:hover,
+    .video-close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+  /* Modal Body */
+  .video-modal-body {
+    // height: 600px;   //calc(100vh-80px);
+    padding: 2px 16px;
+  }
+  /* Modal Footer */
+  .video-modal-footer {
+    padding: 2px 16px;
+    background-color: $main-blue;
+    color: white;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    div {
+      margin-left: 900px;
+      padding: 5px;
+    }
   }
 }
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
 
 
 
