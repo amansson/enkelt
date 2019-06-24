@@ -1,0 +1,18 @@
+<div id="show_screw" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content screw">
+    <div class="modal-header screw">
+      <h2>Screws</h2>
+    </div>
+    <div class="modal-body">
+      <% @pictures[:screw].each do |picture| %>
+        <img src=<%= picture.url %> >
+      <% end %>
+    </div>
+    <div class="modal-footer pt-2">
+      <!-- <p>Keep this information for further reference</p> -->
+      <span class="btn-e modular" id="btn-close-screw">Close</span>
+
+    </div>
+  </div>
+</div>

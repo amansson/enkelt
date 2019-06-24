@@ -29,6 +29,14 @@
   animation-name: slideIn;
   animation-duration: 0.5s;
 
+  &.screw {
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 5%;
+    border: 1px solid $dark-gray;
+  }
+
 }
 
 /* Modal Header */
@@ -36,6 +44,14 @@
   padding: 2px 16px;
   background-color: white;
   color: white;
+
+  &.screw {
+    border: 2px solid $light-gray;
+    box-shadow: 0 10px 15px $light-gray;
+    padding: 5px 16px;
+    color: $dark-gray;
+    justify-content: center;
+  }
 }
 
 /* Modal Body */
