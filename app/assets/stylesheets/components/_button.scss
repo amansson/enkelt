@@ -12,6 +12,14 @@
     text-decoration: none;
   }
 
+  &.modular {
+    background-color: $yellow;
+    color: $dark-gray;
+    padding: 6px 14px;
+    font-style: bold;
+    justify-content: flex-end;
+  }
+
   &.btn-e-trans {
     background-color: transparent;
     display: inline-block;
