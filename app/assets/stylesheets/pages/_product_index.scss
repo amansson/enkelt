@@ -1,0 +1,25 @@
+// Container on the right,containing product-cards
+.product-display {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+  padding-left: 1vw;
+  padding-right: 1.5vw;
+  margin-bottom: 63px;
+  .header {
+    text-align: center;
+    color: $main-blue;
+    margin-top: 3vh;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    h3 {
+      text-shadow: $text-shadow-lg;
+    }
+    p {
+      text-shadow: $text-shadow-sm;
+    }
+  }
+}
