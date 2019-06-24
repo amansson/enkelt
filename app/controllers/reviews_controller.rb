@@ -8,7 +8,6 @@ class ReviewsController < ApplicationController
 
   def create
     @product = Product.find(params[:product_id])
-
     @review = Review.new(params_review)
     if params_review[:rating].nil?
       @review.rating = 0
