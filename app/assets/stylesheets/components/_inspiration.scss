@@ -1,11 +1,11 @@
 .inspiration-header {
   position: absolute;
   width: 50%;
-  top: 25%;
+  top: 39%;
   left: 25%;
   z-index: 1;
   background-color: $yellow;
-  opacity: 0.7;
+  // opacity: 0.7;
   padding: 20px;
   text-align: center;
   border-radius: $border-radius-lg;
@@ -24,4 +24,11 @@
   border-radius: $border-radius-lg;
   margin: 7px;
   box-shadow: $box-shadow-lg;
+}
+.inspiration-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 65px;
+  margin-left: auto;
+  margin-right: auto
 }

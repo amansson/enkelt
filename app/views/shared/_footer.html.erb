@@ -19,11 +19,8 @@
   <% end %>
   <% if current_user %>
   <div class="profile">
-    <%= link_to destroy_user_session_path, method: :delete do %>
-      <div class= "user-action">Log out</div>
-    <% end %>
     <div>
-      <i class="fas fa-user-circle"></i>
+      <i class="fas fa-user-circle text-primary"></i>
     </div>
   </div>
   <% else %>

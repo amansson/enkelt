@@ -3,11 +3,11 @@
   <p>For more inspiration and shopping visit <a href="http://www.ikea.com">www.ikea.com</a> </p>
 </div>
 
-<div class="d-flex flex-wrap mb-5">
+<div class="inspiration-images">
   <% @inspirations.each do |inspiration| %>
     <div>
-      <!-- <img src=<%= inspiration.url %> > -->
-      <img src=<%= inspiration.transform_image("w_326,h_222,c_fill,g_south") %> , class="inspire-image">
+      <!-- <img src= inspiration.transform_image("w_326,h_222,c_fill,g_south") %> , class="inspire-image"> -->
+      <img src=<%= inspiration.transform_image("w_496,h_342,c_fill,g_south") %> , class="inspire-image">
     </div>
   <% end %>
 </div>
