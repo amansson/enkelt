@@ -8,15 +8,22 @@ class ReviewsController < ApplicationController
 
   def create
     @product = Product.find(params[:product_id])
+
     @review = Review.new(params_review)
+    if params_review[:rating].nil?
+      @review.rating = 0
+    end
     @review.product = @product
     @review.user = current_user
     if @review.save
-      flash[:success] = "Review was created successfully"
+      # flash[:success] = "Review was created successfully"
       # redirect_to product_path(@review.product_id)
       redirect_to product_inspiration_path(@review.product_id)
     else
-      render :new
+      # render :new
+      # render 'reviews/new'
+      # flash[:success] = "Review was created successfully"
+      redirect_to new_product_review_path(@product)
     end
   end
 

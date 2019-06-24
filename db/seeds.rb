@@ -35,11 +35,11 @@ Product.create!(id: 9, name: "Hemnes", description: "Bed frame, black-brown, Esp
 Product.create!(id: 10, name: "Tarva", description: "4-drawer chest, black-brown", article_number: "603.604.62", icon: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560782408/ico_tarva3_mrmv8p.webp", image: "image-url", pdf: "show-pdf", video: "show-video")
 
 puts 'Creating reviews'
-Review.create!(id: 1, user_id: 1, rating: 5, content: "Review1 some review content", product_id: 1)
-Review.create!(id: 2, user_id: 2, rating: 1, content: "Review2 some review content", product_id: 2)
-Review.create!(id: 3, user_id: 3, rating: 2, content: "Review3 some review content", product_id: 3)
-Review.create!(id: 4, user_id: 4, rating: 3, content: "Review4 some review content", product_id: 4)
-Review.create!(id: 5, user_id: 5, rating: 4, content: "Review5 some review content", product_id: 1)
+# Review.create!(id: 1, user_id: 1, rating: 5, content: "Review1 some review content", product_id: 1)
+# Review.create!(id: 2, user_id: 2, rating: 1, content: "Review2 some review content", product_id: 2)
+# Review.create!(id: 3, user_id: 3, rating: 2, content: "Review3 some review content", product_id: 3)
+# Review.create!(id: 4, user_id: 4, rating: 3, content: "Review4 some review content", product_id: 4)
+# Review.create!(id: 5, user_id: 5, rating: 4, content: "Review5 some review content", product_id: 1)
 
 
 puts 'Product_pictures'

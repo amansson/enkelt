@@ -12,24 +12,26 @@ const showvideo = () => {
   var v_span = document.getElementsByClassName("video-close")[0];
 
   // When the user clicks on the button, open the modal
-  v_btn.onclick = function() {
-    v_modal.style.display = "block";
-  }
+  if (v_btn){
+    v_btn.onclick = function() {
+      v_modal.style.display = "block";
+    }
 
-  // When the user clicks on <span> (x), close the modal
-  v_span.onclick = function() {
-    v_modal.style.display = "none";
-  }
-
-   // When the user clicks on "Close" button, close the modal
-  v_btn_close.onclick = function() {
-    v_modal.style.display = "none";
-  }
-
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
+    // When the user clicks on <span> (x), close the modal
+    v_span.onclick = function() {
       v_modal.style.display = "none";
+    }
+
+     // When the user clicks on "Close" button, close the modal
+    v_btn_close.onclick = function() {
+      v_modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == v_modal) {
+        v_modal.style.display = "none";
+      }
     }
   }
 };
