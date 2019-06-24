@@ -3,7 +3,7 @@
 <div class="swiper-pagination"></div>
   <div class="swiper-wrapper">
     <% @pictures[:guide].each do |picture| %>
-      <div class="swiper-slide"><img class="image-swipe" src=<%= picture.url %> ></div>
+      <div class="swiper-slide"><img class="image-swipe" src=<%= picture.transform_image("w_250,h_250,c_pad,b_white") %> ></div>
     <% end %>
   </div>
 
