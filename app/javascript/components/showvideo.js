@@ -9,7 +9,8 @@ const showvideo = () => {
   var v_btn_close = document.getElementById("btn-video-close");
 
   // Get the <span> element that closes the modal
-  var v_span = document.getElementsByClassName("video-close")[0];
+  var v_span = document.getElementById("x-btn-close");
+  //var v_span = document.getElementsByClassName("video-close")[0];
 
   // When the user clicks on the button, open the modal
   if (v_btn){
