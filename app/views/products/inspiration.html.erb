@@ -3,15 +3,51 @@
   <p>For more inspiration and shopping visit <a href="http://www.ikea.com">www.ikea.com</a> </p>
 </div>
 
-<div class="inspiration-images">
+<!-- <div class="inspiration-images">
   <% @inspirations.each do |inspiration| %>
     <div>
-      <!-- <img src= inspiration.transform_image("w_326,h_222,c_fill,g_south") %> , class="inspire-image"> -->
+      <img src= inspiration.transform_image("w_326,h_222,c_fill,g_south") %> , class="inspire-image">
+
       <img src=<%= inspiration.transform_image("w_496,h_342,c_fill,g_south") %> , class="inspire-image">
     </div>
   <% end %>
-</div>
+</div> -->
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css">
+
+<div class="content-area group section">
+
+  <!-- container -->
+  <div class="i-container">
+
+    <!-- row -->
+    <div class="row">
+
+      <!-- col -->
+      <div class="col push-down-sm">
+
+        <!-- thumbnails -->
+        <div class="thumbnails group">
+          <!-- <div class="inspiration-images"> -->
+            <% @inspirations.each do |inspiration| %>
+                <a href='<%= inspiration.url%>' data-lightbox="gallery" data-title='MALM'><img src=<%= inspiration.transform_image("w_496,h_342,c_fill,g_south") %> , class="inspire-image"></a>
+            <% end %>
+        </div>
+        <!-- /thumbnails -->
+
+      </div>
+      <!-- /col -->
+
+    </div>
+    <!-- /row -->
+
+  </div>
+  <!-- /container -->
+
+</div>
 
 
 
