@@ -1,5 +1,8 @@
 class ProductsController < ApplicationController
   def index
+
+    @previous_page = request.referrer
+
     if params[:query].nil?
       @search = false
     elsif params[:query].present?
@@ -11,6 +14,7 @@ class ProductsController < ApplicationController
     else
       @search = false
     end
+
 
     user_products = current_user.user_products
     @not_assembled = user_products.where(:assembled =>  false)
