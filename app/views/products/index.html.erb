@@ -18,10 +18,10 @@
       <% if @products.present? %>
         <div class="header">
           <h3>Search Results</h3>
-          <p>These products require assembly.<br> Click for more information.</p>
+          <p>These products require assembly.<br> Select product for more information.</p>
         </div>
         <% @products.each do |product| %>
-          <%= render 'shared/card', product: product %>
+          <%= render 'shared/card', product: product, userproduct: false %>
         <% end %>
       <% else %>
         <div class="header">
@@ -31,10 +31,10 @@
     <% else %>
       <div class="header">
         <h3>Your Products</h3>
-        <p>These are Products you have bought, which require assembly. Mark as complete when done.</p>
+        <p>These are products you have bought, which require assembly.</p>
         </div>
         <% @not_assembled.each do |userproduct| %>
-          <%= render 'shared/card', product: userproduct.product %>
+          <%= render 'shared/card', product: userproduct.product, userproduct: true %>
         <% end %>
     <% end %>
     </div>
