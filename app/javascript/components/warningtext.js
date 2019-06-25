@@ -13,9 +13,13 @@ const warningtext = () => {
 
   // When the user clicks on the button, open the modal
   if (btn){
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
+    btn.addEventListener("click", () => {
+      if(modal.style.display === "block") {
+        modal.style.display = "none"
+      } else {
+        modal.style.display = "block"
+      }
+    })
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
