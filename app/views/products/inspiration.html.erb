@@ -1,6 +1,6 @@
 <div class="inspiration-header">
   <h1><%= @product.name.upcase %> inspiration</h1>
-  <p>For more inspiration and shopping visit <a href="http://www.ikea.com">www.ikea.com</a> </p>
+  <p>For more inspiration and shopping visit <a href="https://www.ikea.com/gb/en/">www.IKEA.com</a> </p>
 </div>
 
 <!-- <div class="inspiration-images">
@@ -31,7 +31,7 @@
         <div class="thumbnails group">
           <!-- <div class="inspiration-images"> -->
             <% @inspirations.each do |inspiration| %>
-                <a href='<%= inspiration.url%>' data-lightbox="gallery" data-title='MALM'><img src=<%= inspiration.transform_image("w_496,h_342,c_fill,g_south") %> , class="inspire-image"></a>
+                <a href='<%= inspiration.url%>' data-lightbox="gallery" data-title='MALM'><img src=<%= inspiration.transform_image("w_500,h_345,c_fill,g_south") %> , class="inspire-image"></a>
             <% end %>
         </div>
         <!-- /thumbnails -->
