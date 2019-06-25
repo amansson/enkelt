@@ -1,11 +1,16 @@
 <div class="index">
 
-  <div class="container-lp-copy">
-
-    <div class="content">
-      <%= render 'shared/searchform' %>
+  <% if @previous_page == "http://localhost:3000/" || @previous_page == "https://ienkelt.herokuapp.com/" %>
+    <div class="show-left-animation">
+  <% end %>
+    <div class="container-lp-copy">
+      <div class="content">
+        <%= render 'shared/searchform' %>
+      </div>
     </div>
-  </div>
+  <% if @previous_page == "http://localhost:3000/" || @previous_page == "https://ienkelt.herokuapp.com/" %>
+    </div>
+  <% end %>
 
 
   <div class="product-display">
@@ -13,7 +18,7 @@
       <% if @products.present? %>
         <div class="header">
           <h3>Search Results</h3>
-          <p>These Products require assembly.<br> Click for more information.</p>
+          <p>These products require assembly.<br> Click for more information.</p>
         </div>
         <% @products.each do |product| %>
           <%= render 'shared/card', product: product %>
@@ -32,6 +37,6 @@
           <%= render 'shared/card', product: userproduct.product %>
         <% end %>
     <% end %>
+    </div>
   </div>
 </div>
-
