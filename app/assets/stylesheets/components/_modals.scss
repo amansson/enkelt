@@ -17,7 +17,7 @@
 /* Modal Content */
 .modal-content {
   position: fixed;
-  bottom: 70px;
+  bottom: 170px;
   left: 25%;
   background-color: #fefefe;
   margin: auto;
@@ -28,6 +28,7 @@
   // animation-name: animatetop;
   animation-name: slideIn;
   animation-duration: 0.5s;
+  border-radius: 0px;
 
   &.screw {
     width: 80%;
@@ -55,19 +56,29 @@
 }
 
 /* Modal Body */
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  padding: 2px 16px;
+  img {
+    margin-top: 100px;
+    width: 100%;
+  }
+}
 
 /* Modal Footer */
 .modal-footer {
-  padding: 2px 16px;
+  //padding: 4px 16px;
   background-color: $main-blue;
   color: white;
+  align-items: center;
   justify-content: space-between;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .warningtext {
     span {
       font-weight: bolder;
+      color: $main-red;
     }
 }
 /* The Close Button */
@@ -139,12 +150,14 @@
   }
   /* Modal Footer */
   .video-modal-footer {
-    padding: 2px 16px;
-    background-color: $main-blue;
-    color: white;
     display: flex;
     justify-content: right;
     align-items: end;
+    background-color: $main-blue;
+    color: white;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+
     div {
       margin-left: 900px;
       padding: 5px;
@@ -162,12 +175,12 @@
 /* Add Animation */
 @-webkit-keyframes slideIn {
   from {bottom: -300px; opacity: 0}
-  to {bottom: 70; opacity: 1}
+  to {bottom: 170; opacity: 1}
 }
 
 @keyframes slideIn {
   from {bottom: -300px; opacity: 0}
-  to {bottom: 70; opacity: 1}
+  to {bottom: 170; opacity: 1}
 }
 
 @-webkit-keyframes fadeIn {
