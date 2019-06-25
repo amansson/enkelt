@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="manifest" href="<%= asset_path 'manifest.json' %>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css">
     <!-- <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -35,7 +36,10 @@
     <%= javascript_pack_tag 'application' %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %>
     <%= stylesheet_pack_tag 'swipe'%>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
 <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
     <%= yield(:after_js) %>
+
   </body>
 </html>
