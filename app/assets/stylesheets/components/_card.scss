@@ -19,7 +19,7 @@
     transform: scale(1.2);
   }
   .card-remove-item {
-    padding: 30px;
+    padding: 33px;
     font-size: 24px;
     text-decoration: none;
     color: $green;
@@ -39,6 +39,7 @@
   img {
     height: 99px;
     width: 100px;
+    margin-left: 6px;
     object-fit: scale-down;
   }
 
