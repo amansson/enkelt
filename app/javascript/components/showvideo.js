@@ -14,10 +14,14 @@ const showvideo = () => {
 
   // When the user clicks on the button, open the modal
   if (v_btn){
-    v_btn.onclick = function() {
-      v_modal.style.display = "block";
-    }
-
+    v_btn.addEventListener("click", () => {
+      if (v_modal.style.display === "block") {
+        v_modal.style.display = "none" 
+      } else {
+        v_modal.style.display = "block"
+      };
+    })
+    
     // When the user clicks on <span> (x), close the modal
     v_span.onclick = function() {
       v_modal.style.display = "none";
