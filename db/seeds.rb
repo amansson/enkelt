@@ -34,7 +34,7 @@ Product.create!(id: 8, name: "Tarva", description: "Bed frame, pine", article_nu
 Product.create!(id: 9, name: "Hemnes", description: "Bed frame, black-brown, Espevär", article_number: "792.106.27", icon: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560851709/ico_hemnes_bed_yx9no4.webp", image: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560851719/img_hemnes_bed_cjcid7.jpg", pdf: "show-pdf", video: "show-video")
 Product.create!(id: 10, name: "Tarva", description: "4-drawer chest, black-brown", article_number: "603.604.62", icon: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560782408/ico_tarva3_mrmv8p.webp", image: "image-url", pdf: "show-pdf", video: "show-video")
 
-puts 'Creating reviews'
+# puts 'Creating reviews'
 # Review.create!(id: 1, user_id: 1, rating: 5, content: "Review1 some review content", product_id: 1)
 # Review.create!(id: 2, user_id: 2, rating: 1, content: "Review2 some review content", product_id: 2)
 # Review.create!(id: 3, user_id: 3, rating: 2, content: "Review3 some review content", product_id: 3)
@@ -74,12 +74,15 @@ ProductPicture.create!(id: 28, name: "Guide picture", picture_type: "guide", url
 ProductPicture.create!(id: 29, name: "Guide picture", picture_type: "guide", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1561018505/pdf/malm_19_whphfw.png", product_id: 1)
 ProductPicture.create!(id: 30, name: "Guide picture", picture_type: "guide", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1561018505/pdf/malm_20_gfzzku.png", product_id: 1)
 ProductPicture.create!(id: 31, name: "Guide picture", picture_type: "guide", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1561018505/pdf/malm_21_vyvu1s.png", product_id: 1)
-
-
-
 ProductPicture.create!(id: 32, name: "Tool picture", picture_type: "tool", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560775759/m2_wikldn.png", product_id: 1)
 ProductPicture.create!(id: 33, name: "Overview picture", picture_type: "overview", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560775759/m2_wikldn.png", product_id: 1)
 ProductPicture.create!(id: 34, name: "Warning picture", picture_type: "warning", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560785204/warning_d81lnc.png", product_id: 1)
+ProductPicture.create!(id: 35, name: "Inspire picture", picture_type: "inspiration", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1561391055/inspire_malm_11_nagys4.webp", product_id: 1)
+ProductPicture.create!(id: 36, name: "Inspire picture", picture_type: "inspiration", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1561391055/inspire_malm_12_lufwgl.webp", product_id: 1)
+ProductPicture.create!(id: 37, name: "Inspire picture", picture_type: "inspiration", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1561391055/inspire_malm_13_bzrrsi.webp", product_id: 1)
+ProductPicture.create!(id: 38, name: "Inspire picture", picture_type: "inspiration", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1561391055/inspire_malm_14_hnfnww.webp", product_id: 1)
+ProductPicture.create!(id: 39, name: "Inspire picture", picture_type: "inspiration", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1561391055/inspire_malm_15_lufwgl.webp", product_id: 1)
+
 
 puts 'Creating User_products'
 UserProduct.create!(id: 1, user_id: 1, product_id: 1, purchase_date: "2019-07-11")
