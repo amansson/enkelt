@@ -1,19 +1,20 @@
-<%= link_to product_path(product), class: "product-card-link-container" do %>
-  <div class="card-product">
-    <img src= <%= product.icon %> >
-    <div class="card-product-show">
-          <div class="card-product-infos">
+<div class="card-product">
+  <%= link_to product_path(product), class: 'textdecoration-none' do %>
+    <div class="card-product-content">
+      <img src= <%= product.icon %> >
+      <div class="card-product-show">
+          <!-- <div class="card-product-infos"> -->
             <h2><%= product.name %></h2>
             <p> <%= product.description %></p>
-          </div>
-
-          <div>
-            <%= link_to "Mark as Assembled", set_product_marked_path(product), method: :patch %>
-            </div>
+          <!-- </div> -->
+      </div>
+    </div>
+  <% end %>
+  <% if userproduct %>
+      <%= link_to set_product_marked_path(product), method: :patch do %>
+        <div class="card-remove-item">
+          <i class="fas fa-trash-alt"></i>
         </div>
-  </div>
-  <div>
-  </div>
-<% end %>
-
-
+      <% end %>
+  <% end %>
+</div>
