@@ -13,10 +13,10 @@
   border-radius: $border-radius;
   &:hover {
     text-decoration: none;
-  }
-  &:active {
     box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
     transform: scale(1.2);
+  }
+  &:active {
   }
   .card-remove-item {
     padding: 33px;
