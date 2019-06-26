@@ -40,3 +40,13 @@
     </div>
   </div>
 </div>
+
+ <script>
+  let btns = document.querySelectorAll(".remove");
+  btns.forEach(function(btn) {
+    btn.addEventListener("click", function(event){
+      //console.log(event.currentTarget);
+      btn.parentNode.parentNode.remove();
+    });
+  })
+ </script>
