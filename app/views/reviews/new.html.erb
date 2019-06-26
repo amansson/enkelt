@@ -24,8 +24,8 @@
       <label for="star1" title="text">1 star</label>
     </div>
       <%= f.input :content, label: false, placeholder: "Please leave a comment", :input_html => {:rows => 5} %>
-      <%= f.button :submit, "Send Feedback", class: "btn-e" %>
-      <%= link_to "Skip", product_inspiration_path(@product) , class: "btn btn-e skip" %>
+      <%= f.button :submit, "Send Feedback", class: "btn-e click-animation" %>
+      <%= link_to "Skip", product_inspiration_path(@product), class: "btn-e grey click-animation" %>
       <% end %>
   </div>
 
