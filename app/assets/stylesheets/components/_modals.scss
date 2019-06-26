@@ -42,17 +42,11 @@
 
 /* Modal Header */
 .modal-header {
-  padding: 2px 16px;
+  // padding-top: 16px;
+  padding: 5px 16px;
+  justify-content: center;
   background-color: white;
-  color: white;
-
-  &.screw {
-    border: 2px solid $light-gray;
-    box-shadow: 0 10px 15px $light-gray;
-    padding: 5px 16px;
-    color: $dark-gray;
-    justify-content: center;
-  }
+  color: $text-black;
 }
 
 /* Modal Body */
