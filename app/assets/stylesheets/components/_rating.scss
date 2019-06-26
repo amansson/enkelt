@@ -19,8 +19,8 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  -webkit-animation: zoomin 100s ease-in infinite;
-  animation: zoomin 100s ease-in infinite;
+  -webkit-animation: zoomin 20s ease-in infinite;
+  animation: zoomin 20s ease-in infinite;
   transition: all .5s ease-in-out;
   overflow: hidden;
   height: 50vh;
@@ -33,8 +33,8 @@
   width: 100vw;
   text-align:center;
   background: none;
-  -webkit-animation: zoomout 100s ease-in infinite;
-  animation: zoomout 100s ease-in infinite;
+  -webkit-animation: zoomout 20s ease-in infinite;
+  animation: zoomout 20s ease-in infinite;
   transition: all .5s ease-in-out;
   overflow: hidden;
 }
