@@ -13,12 +13,12 @@
     <div class="video-modal-body">
       <!-- <video src="https://youtu.be/37v96zMllFA?t=42"></video> -->
       <!-- <div id="player"></div> -->
- 
-        <video width="100%" height="100%" controls>
+
+        <video width="100%" height="100%" controls autoplay>
           <source src="https://res.cloudinary.com/favapps-dx-33/video/upload/v1561538930/video/enkelt_video_n63ssk.mp4" type="video/mp4">
           Oops! Your browser does not support HTML5 video
         </video>
- 
+
       <!-- <iframe width="1000" height="600" src="https://www.youtube.com/embed/37v96zMllFA"></iframe> -->
     </div>
     <div class="video-modal-footer p-2">
@@ -32,7 +32,7 @@
 <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
 <%
 =begin%>
- 
+
 
   <script>
     // 2. This code loads the IFrame Player API code asynchronously.
@@ -88,6 +88,6 @@
     function stopVideo() {
       player.stopVideo();
     }
-  </script> 
+  </script>
 <%
 =end%>
