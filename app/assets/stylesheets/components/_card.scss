@@ -16,13 +16,14 @@
   }
   &:active {
     box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-    transform: scale(1.2);
   }
   .card-remove-item {
-    padding: 33px;
-    font-size: 24px;
+    padding: 30px;
+    font-size: 15px;
     text-decoration: none;
-    color: $green;
+    button {
+      margin:0;
+    }
   }
 }
 
@@ -34,6 +35,9 @@
   display: flex;
   align-items: center;
   &:hover {
+    text-decoration: none;
+  }
+  &:active {
     text-decoration: none;
   }
   img {
@@ -52,6 +56,9 @@
     justify-content: space-between;
     padding-left: 15px;
     &:hover {
+      text-decoration: none;
+    }
+    &:active {
       text-decoration: none;
     }
     h2 {
