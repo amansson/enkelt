@@ -1,16 +1,79 @@
+
+
+/* The outermost element*/
+.header-wrapper {
+  overflow: hidden;
+  height: 50vh;
+  width: 100vw;
+  text-align:center;
+}
+
+.zoominheader {
+  text-align:center;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  background-image: linear-gradient(rgba(222,92,97,0.6),rgba(0,0,0,0.5)), url("https://res.cloudinary.com/favapps-dx-33/image/upload/v1561457585/inspire/inspire_malm16_lfmi7n.png");
+  background-position: center;
+  background-size: cover;
+  // background-attachment: fixed;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-animation: zoomin 100s ease-in infinite;
+  animation: zoomin 100s ease-in infinite;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+  height: 50vh;
+  width: 100vw;
+}
+
+/* The innermost element*/
+.zoomoutheader {
+  height: 50vh;
+  width: 100vw;
+  text-align:center;
+  background: none;
+  -webkit-animation: zoomout 100s ease-in infinite;
+  animation: zoomout 100s ease-in infinite;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+}
+
+
+
+/* Zoom in Keyframes */
+@-webkit-keyframes zoomin {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1);}
+}
+@keyframes zoomin {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1);}
+} /*End of Zoom in Keyframes */
+
+/* Zoom out Keyframes */
+@-webkit-keyframes zoomout {
+  0% {transform: scale(1);}
+  50% {transform: scale(0.67);}
+  100% {transform: scale(1);}
+}
+@keyframes zoomout {
+    0% {transform: scale(1);}
+  50% {transform: scale(0.67);}
+  100% {transform: scale(1);}
+}/*End of Zoom out Keyframes */
+
+
+
+
 .container-review {
   width: 100vw;
   height: calc(100vh - 60px);
   .banner {
     height: 50vh;
     width: 100vw;
-    background-position: center;
-    background-size: cover;
-    // background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3));
-    z-index: 0;
-    color: $dark-white;
-    text-align: center;
-    padding: 10vh;
   }
   .form {
     width: 50vw;
@@ -20,13 +83,16 @@
   }
 
   h1 {
+    color: #F5F5F5;
+    margin-top: 50px;
     margin-bottom: 20px;
     font-size: 50px;
-    text-shadow: $text-shadow-lg;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   }
   p {
+    color: #F5F5F5;
     font-size: 20px;
-    text-shadow: $text-shadow-lg;
+  
   }
   .skip {
     text-align: center;
