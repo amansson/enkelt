@@ -50,17 +50,6 @@ $theme-color: #f7ac00;
   backface-visibility: hidden;
 }
 
-// body {
-//   font-family: $body-font;
-//   font-size: 16px;
-//   color: #fff;
-// }
-
-// a {
-//   text-decoration: none;
-//   color: inherit;
-//   display: inline-block;
-// }
 
 .search_container {
   width: 100%;
@@ -97,7 +86,7 @@ $theme-color: #f7ac00;
     padding: 1.5em 2em;
     border: none;
     font-family: $body-font;
-    text-transform: capitalize;
+    //text-transform: uppercase;
     border-radius: 2px;
     color: #555;
     outline: none;
