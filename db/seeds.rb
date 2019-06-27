@@ -84,7 +84,7 @@ ProductPicture.create!(id: 37, name: "Inspire picture", picture_type: "inspirati
 ProductPicture.create!(id: 38, name: "Inspire picture", picture_type: "inspiration", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1560957108/inspire_malm6_lham1q.jpg", product_id: 1)
 ProductPicture.create!(id: 39, name: "Inspire picture", picture_type: "inspiration", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1561457585/inspire/inspire_malm15_n2uf6p.jpg", product_id: 1)
 ProductPicture.create!(id: 40, name: "Inspire picture", picture_type: "inspiration", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1561457585/inspire/inspire_malm16_lfmi7n.jpg", product_id: 1)
-ProductPicture.create!(id: 41, name: "Tool picture", picture_type: "screw", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1561018505/pdf/malm_screws_gjky4a.png", product_id: 1)
+ProductPicture.create!(id: 41, name: "Tool picture", picture_type: "screw", url: "https://res.cloudinary.com/favapps-dx-33/image/upload/v1561620513/pdf/malm_screws_bd1xkg.jpg", product_id: 1)
 
 
 
