@@ -1,7 +1,11 @@
-.container {
-  font-size: 38px;
-  padding: 50px;
-  margin-left: 30px;
+body {
+  margin: 0;
+  padding: 0;
+}
 
+.error-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 
 }
