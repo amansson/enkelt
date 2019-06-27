@@ -1,5 +1,11 @@
 
-
+.textheader {
+  position: fixed;
+  top: 50px;
+  z-index: 2;
+  margin-left: 100px;
+  text-align: center;
+}
 /* The outermost element*/
 .header-wrapper {
   overflow: hidden;
@@ -11,7 +17,7 @@
 .zoominheader {
   text-align:center;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-  background-image: linear-gradient(rgba(222,92,97,0.6),rgba(0,0,0,0.5)), url("https://res.cloudinary.com/favapps-dx-33/image/upload/v1561457585/inspire/inspire_malm16_lfmi7n.png");
+  background-image: linear-gradient(rgba(222,92,97,0.6),rgba(0,0,0,0.3)), url("https://res.cloudinary.com/favapps-dx-33/image/upload/v1561457585/inspire/inspire_malm16_lfmi7n.png");
   background-position: center;
   background-size: cover;
   // background-attachment: fixed;
@@ -19,8 +25,8 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  -webkit-animation: zoomin 25s ease-in infinite;
-  animation: zoomin 25s ease-in infinite;
+  -webkit-animation: zoomin 8s ease-in;
+  animation: zoomin 8s ease-in;
   transition: all .5s ease-in-out;
   overflow: hidden;
   height: 50vh;
@@ -33,34 +39,34 @@
   width: 100vw;
   text-align:center;
   background: none;
-  -webkit-animation: zoomout 25s ease-in infinite;
-  animation: zoomout 25s ease-in infinite;
+  -webkit-animation: zoomout 8s ease-in;
+  animation: zoomout 8s ease-in;
   transition: all .5s ease-in-out;
   overflow: hidden;
 }
 
 /* Zoom in Keyframes */
 @-webkit-keyframes zoomin {
-  0% {transform: scale(1);}
-  50% {transform: scale(1);}
+  0% {transform: scale(1.2);}
+  //50% {transform: scale(1.1);}
   100% {transform: scale(1);}
 }
 @keyframes zoomin {
-  0% {transform: scale(1);}
-  50% {transform: scale(1.05);}
+  0% {transform: scale(1.2);}
+  //50% {transform: scale(1.1);}
   100% {transform: scale(1);}
 } /*End of Zoom in Keyframes */
 
 /* Zoom out Keyframes */
 @-webkit-keyframes zoomout {
-  0% {transform: scale(1);}
-  50% {transform: scale(0.95);}
-  100% {transform: scale(1);}
+  // 0% {transform: scale(1);}
+  // 50% {transform: scale(1.05);}
+  // 100% {transform: scale(1.1);}
 }
 @keyframes zoomout {
-    0% {transform: scale(1);}
-  50% {transform: scale(0.95);}
-  100% {transform: scale(1);}
+  //   0% {transform: scale(1);}
+  // 50% {transform: scale(1.05);}
+  // 100% {transform: scale(1.1);}
 }/*End of Zoom out Keyframes */
 
 
