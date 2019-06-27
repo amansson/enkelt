@@ -1,0 +1,15 @@
+.container-lp-copy.shrink-banner {
+  animation: shrink-banner 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes shrink-banner {
+  from {
+      max-width: 100vw;
+      min-width: 100vw;
+  }
+  to {
+      max-width: 50vw;
+      min-width: 50vw;
+  }
+}

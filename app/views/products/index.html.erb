@@ -1,5 +1,4 @@
 <div class="index">
-
   <% if @previous_page == "http://localhost:3000/" || @previous_page == "https://ienkelt.herokuapp.com/" %>
     <div class="show-left-animation">
   <% end %>
@@ -40,12 +39,8 @@
   </div>
 </div>
 
- <script>
-  let btns = document.querySelectorAll(".remove");
-  btns.forEach(function(btn) {
-    btn.addEventListener("click", function(event){
-      //console.log(event.currentTarget);
-      btn.parentNode.parentNode.remove();
-    });
-  })
- </script>
+<% if @previous_page == "http://localhost:3000/" || @previous_page == "https://ienkelt.herokuapp.com/" %>
+  <%= content_for(:after_js) do %>
+   <%= javascript_pack_tag 'index-animation' %>
+  <% end %>
+<% end %>
