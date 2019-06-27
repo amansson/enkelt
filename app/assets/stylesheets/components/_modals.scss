@@ -48,6 +48,9 @@
   justify-content: center;
   background-color: white;
   color: $text-black;
+  h1 {
+    margin-bottom: 0.8rem
+  }
 }
 
 /* Modal Body */
@@ -55,7 +58,7 @@
   padding: 2px 16px;
   img {
 
-    width: 100%;
+    width: 95%;
   }
 }
 

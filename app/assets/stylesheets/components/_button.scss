@@ -10,8 +10,9 @@
 
   &.modular {
     background-color: $yellow;
-    color: $dark-gray;
+    color: $black;
     padding: 6px 14px;
+    font-weight: bold;
   }
   &:hover {
     text-decoration: none;
