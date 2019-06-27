@@ -1,12 +1,39 @@
 .container-lp-copy.shrink-banner {
+  -webkit-animation: shrink-banner 1s;
   animation: shrink-banner 1s;
   animation-fill-mode: both;
 }
 
+@-webkit-keyframes shrink-banner {
+  from {
+      max-width: 100vw;
+  }
+  to {
+      max-width: 50vw;
+      min-width: 50vw;
+  }
+}
+@-moz-keyframes shrink-banner {
+  from {
+      max-width: 100vw;
+  }
+  to {
+      max-width: 50vw;
+      min-width: 50vw;
+  }
+}
+@-o-keyframes shrink-banner {
+  from {
+      max-width: 100vw;
+  }
+  to {
+      max-width: 50vw;
+      min-width: 50vw;
+  }
+}
 @keyframes shrink-banner {
   from {
       max-width: 100vw;
-      min-width: 100vw;
   }
   to {
       max-width: 50vw;
